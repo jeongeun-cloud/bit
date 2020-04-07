@@ -1,0 +1,11 @@
+package view;
+
+public class Menu implements View {
+
+	@Override
+	public void display() {
+		System.out.println(menuTitle);
+
+	}
+
+}

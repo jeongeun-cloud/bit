@@ -1,0 +1,11 @@
+package view;
+
+public class Delete implements View {
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package org.comstudy21.ch16;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Ex01Set {
+
+	public static void main(String[] args) {
+		// key도 없고, index도 없는 Set구조
+		// Value의 중복이 없다.
+		Set<String> set = new HashSet<>();
+		set.add("오징어");
+		set.add("꼴뚜기");
+		set.add("꼴뚜기");
+		set.add("꼴뚜기");
+		set.add("꼴뚜기");
+		
+		System.out.println(set.size());
+	}
+
+}
+
+
+

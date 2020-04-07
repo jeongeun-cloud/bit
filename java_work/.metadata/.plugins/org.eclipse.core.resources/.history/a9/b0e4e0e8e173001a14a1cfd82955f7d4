@@ -1,0 +1,16 @@
+package org.comstudy21.resource;
+
+import java.util.Scanner;
+
+public interface  R {
+	String appTitle =":::::::::: 전화번호부 ::::::::::";
+	String inputTitle = ":::: 입력 기능 ::::";
+	String outputTitle = ":::: 출력 기능 ::::";
+	String[] menuArr = {"","입력","출력","검색","수정","삭제","종료"};
+	
+	Scanner scan = new Scanner(System.in);
+	
+	Data data = new Data();
+	
+
+}

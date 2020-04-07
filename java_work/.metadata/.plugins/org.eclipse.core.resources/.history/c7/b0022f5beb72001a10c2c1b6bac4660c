@@ -1,0 +1,17 @@
+package java_day12;
+
+interface MyInterface {
+	// 인터페이스는 상수와 추상메소드만을 멤버로 가질 수 있다.
+	// java 8 이상부터는 default메소드를 멤버로 가질 수 있다.
+	// java 9 이상부터는 static메소드와 private 메소드도 멤버로 가질 수 있다.
+	
+	// public static final String name = "MyInterface"; // 이렇게 선언한 것과 똑같음	
+	String name = "MyInterface";	
+}
+
+public class Ch05Ex30 {
+	public static void main(String[] args) {
+		System.out.println("name = " + MyInterface.name);
+	}
+
+}

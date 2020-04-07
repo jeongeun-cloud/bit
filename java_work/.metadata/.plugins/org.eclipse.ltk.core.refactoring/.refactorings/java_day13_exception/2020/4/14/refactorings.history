@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Ch06Ex05.java&apos; to &apos;java_day13_exception/src/org.comstudy21.string&apos;&#x0D;&#x0A;- Original project: &apos;java_day13_exception&apos;&#x0D;&#x0A;- Destination element: &apos;java_day13_exception/src/org.comstudy21.string&apos;&#x0D;&#x0A;- Original element: &apos;org.comstudy21.thread.Ch06Ex05.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;org.comstudy21.string" element1="/src&lt;org.comstudy21.thread{Ch06Ex05.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1585713649103" units="1" version="1.0"/>
+</session>

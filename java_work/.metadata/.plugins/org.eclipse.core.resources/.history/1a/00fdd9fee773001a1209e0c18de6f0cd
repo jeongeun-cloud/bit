@@ -1,0 +1,11 @@
+package org.comstudy21.view;
+
+public class Input implements View {
+	
+	@Override
+	public void display() {
+		System.out.println(inputTitle);
+		
+	}
+
+}

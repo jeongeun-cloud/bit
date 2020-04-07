@@ -1,0 +1,13 @@
+package view;
+
+public class Menu implements View {
+
+	@Override
+	public void display() {
+		System.out.println(menuTitle);
+		for(int i=0; i<menuArr.length; i++) {
+			System.out.printf("%d.%s", i, menuArr[i]);
+		}
+	}
+
+}

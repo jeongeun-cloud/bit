@@ -1,0 +1,40 @@
+package model;
+
+public class DAO {
+	
+	private static final int MAX = 100;
+	private DTO[] dtoArr = new DTO[MAX];
+	private int top = 0;
+	private int seq = 1;
+	
+	// ª˘«√
+	{
+		dtoArr[top++] = new DTO(seq++, "ju", 75, 95, 100);
+		dtoArr[top++] = new DTO(seq++, "moon", 45, 65, 20);
+		dtoArr[top++] = new DTO(seq++, "ju", 95, 95, 100);
+		dtoArr[top++] = new DTO(seq++, "¡§¿∫", 60, 65, 80);
+		dtoArr[top++] = new DTO(seq++, "¡÷¡§¿∫", 85, 90, 92);
+	}
+	
+
+	// ª¿‘
+	public void insert(DTO dto) {
+		dto.setIdx(seq++);
+		dtoArr[top++] = dto;
+	}
+	
+	// ΩÃ±€≈Ê
+	private DAO() {
+		// TODO Auto-generated constructor stub
+	}
+	private static DAO instance;
+	public static DAO getInstance() {
+		if(instance == null) {
+			instance = new DAO();
+		}
+		return instance;
+	} 
+	
+	
+	
+}

@@ -1,0 +1,11 @@
+package org.comstudy21.ch16;
+
+public class Ex02ArrayLst {
+
+	public static void main(String[] args) {
+		// ArrayList는 배열과 유사하다.
+		
+
+	}
+
+}

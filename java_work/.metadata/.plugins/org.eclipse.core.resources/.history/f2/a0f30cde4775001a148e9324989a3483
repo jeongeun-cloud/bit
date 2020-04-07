@@ -1,0 +1,12 @@
+package resource;
+
+import java.util.Scanner;
+
+// 상수 모아두는 곳
+public interface R {
+	
+	Scanner scan = new Scanner(System.in);
+	
+	Data data = new Data();
+	
+}

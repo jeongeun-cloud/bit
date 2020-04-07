@@ -1,0 +1,15 @@
+package controller;
+
+import resource.Data;
+import resource.R.*;
+
+public class Controller {
+
+	public static void service() {
+		
+		switch(Data.no) {
+		case 1 : 
+		}
+	}
+	
+}

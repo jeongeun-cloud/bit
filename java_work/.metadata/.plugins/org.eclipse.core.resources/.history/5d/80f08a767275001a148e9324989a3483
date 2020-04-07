@@ -1,0 +1,16 @@
+package view;
+
+public class Modify implements View {
+
+	@Override
+	public void display() {
+		System.out.println(modifyTitle);
+		
+		System.out.print("수정 할 번호 입력 : ");
+		data.no = scan.nextInt();
+		
+		
+
+	}
+
+}

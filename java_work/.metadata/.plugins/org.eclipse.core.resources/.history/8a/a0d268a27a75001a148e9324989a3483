@@ -1,0 +1,12 @@
+package controller;
+
+import static resource.R.*;
+
+public class Controller {
+	
+	public static void service() {
+		
+		viewArr[data.no].display();
+		
+	}
+}

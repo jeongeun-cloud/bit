@@ -1,0 +1,10 @@
+package org.comstudy21.page319.ex10;
+
+public class DictionaryApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

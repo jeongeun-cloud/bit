@@ -1,0 +1,49 @@
+package model;
+
+public class DAO {
+	private static final int MAX = 100;
+	private DTO[] dtoArr = new DTO[MAX];
+	private int top = 0; 
+	private int seq = 1;
+	
+	
+	{
+		dtoArr[top++] = new DTO(seq++, "Ju", "010-1111-1111");
+		dtoArr[top++] = new DTO(seq++, "Moon", "010-1111-1111");
+		dtoArr[top++] = new DTO(seq++, "Ju", "010-1111-1111");
+		dtoArr[top++] = new DTO(seq++, "Kim", "010-1111-1111");
+	}
+	
+	
+	// »ðÀÔ
+	public void insert(DTO dto){
+		dto.setIdx(seq++);
+		dtoArr[top++] = dto;
+	}
+
+	// ½Ì±ÛÅæ
+	private DAO() {}
+	private static DAO instance;
+	public static DAO getInstance() {
+		if(instance == null) {
+			instance = new DAO();
+		}
+		return instance;
+	}
+	
+	// Ãâ·Â
+	public DTO[] show() {
+		DTO[] arr = new DTO[top];
+		for(int i=0; i<top; i++) {
+			arr[i] = new DTO(); // ???
+			arr[i].setIdx(dtoArr[i].getIdx());
+			arr[i].setName(dtoArr[i].getName());
+			arr[i].setPhone(dtoArr[i].getPhone());
+		}
+		
+		return arr;
+	}
+	
+	
+
+}

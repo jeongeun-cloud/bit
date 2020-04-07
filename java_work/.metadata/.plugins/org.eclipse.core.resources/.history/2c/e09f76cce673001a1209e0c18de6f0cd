@@ -1,0 +1,20 @@
+package org.comstudy21.controller;
+
+import static org.comstudy21.resource.R.*;
+
+public class Controller {
+	public static void service() {
+		try {
+			viewArr[data.no].display();
+			
+			viewArr[data.no].display();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		data.no = 0;
+		service();
+	}
+
+}

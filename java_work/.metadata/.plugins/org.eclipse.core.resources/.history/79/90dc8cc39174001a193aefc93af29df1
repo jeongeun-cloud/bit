@@ -1,0 +1,52 @@
+package org.comstudy21.page319.ex09;
+
+class StringStack implements Stack{
+
+	int capacity;
+	String[] stack;
+	int top;
+	
+	public StringStack(int capacity) {
+		this.capacity = capacity;
+		stack = new String[capacity];
+		top = 0;
+	}
+
+	@Override
+	public int length() {
+		return top;		
+	}
+
+	@Override
+	public int capacity() {
+		return 0;
+	}
+
+	@Override
+	public String pop() {
+		return null;
+	}
+
+	@Override
+	public boolean push(String val) {
+		return false;
+	}
+	
+}
+
+public class StackApp {
+
+	public static void main(String[] args) {
+		StringStack stack = new StringStack(3);
+		stack.push("hello");
+		stack.push("sunny");
+		stack.push("smile");
+		stack.push("happy");
+		
+		while(stack.length() >0 ) {
+			System.out.print(stack.pop() + " ");
+		}
+
+	}
+
+}

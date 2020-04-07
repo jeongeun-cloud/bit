@@ -1,0 +1,10 @@
+package org.comstudy21.view;
+
+public class Menu implements PhonebookView {
+
+	@Override
+	public void display() {
+
+	}
+
+}

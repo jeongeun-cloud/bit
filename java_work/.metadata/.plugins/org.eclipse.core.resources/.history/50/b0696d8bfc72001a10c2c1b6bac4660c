@@ -1,0 +1,12 @@
+package org.comstudy21.controller;
+
+import static org.comstudy21.resource.R.*;
+
+
+public class PhonebookController {
+	public void service() {
+		if(data.no == 0) {
+			menu.display();
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package org.comstudy21.thread;
+
+public class Ch06Ex05 {
+	public static void main(String[] args) {
+		StringBuffer strbf = new StringBuffer("Korea"); // StringBuffer는 객체 생성 후에 이용해야 함 (오토박싱 안되기 때문)
+		
+		strbf.append("Australia");
+		
+		System.out.println(strbf);
+	}
+}

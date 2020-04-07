@@ -1,0 +1,21 @@
+package org.comstudy21.string;
+
+import java.util.StringTokenizer;
+
+public class Ch06Ex07 {
+
+	public static void main(String[] args) {
+		
+		// CSV 형식, TSV ...
+		String str = "홍길동|25|서울시 종로구|프로그래머|010-1234-5678";
+		StringTokenizer strtz = new StringTokenizer(str, "|");
+		
+		System.out.println(strtz.countTokens()); // 5개로 나눠졌다
+		
+		// 잘라서 출력해라
+		while(strtz.hasMoreTokens()) {
+			System.out.println(strtz.nextToken());
+		}
+	}
+
+}

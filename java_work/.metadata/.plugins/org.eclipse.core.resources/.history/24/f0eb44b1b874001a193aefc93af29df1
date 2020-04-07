@@ -1,0 +1,21 @@
+package org.comstudy21.page322.ex14;
+
+public class Rect implements Shape {
+	
+	public Rect(int x, int y) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

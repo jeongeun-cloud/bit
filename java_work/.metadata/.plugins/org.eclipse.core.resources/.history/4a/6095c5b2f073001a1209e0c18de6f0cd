@@ -1,0 +1,25 @@
+package org.comstudy21.resource;
+
+import java.util.Scanner;
+
+import org.comstudy21.view.Input;
+import org.comstudy21.view.Menu;
+import org.comstudy21.view.Output;
+import org.comstudy21.view.View;
+
+public interface  R {
+	String appTitle = "::::::::: 전화번호부 :::::::::";
+	String menuTitle = ":::::::::: MENU ::::::::::";
+	String inputTitle = ":::: 입력 기능 ::::";
+	String outputTitle = ":::: 출력 기능 ::::";
+	String[] menuArr = {"","입력","출력","검색","수정","삭제","종료"};
+	
+	Scanner scan = new Scanner(System.in);
+	
+	// 바인딩 
+	Data data = new Data();
+	
+	View[] viewArr = {new Menu(), new Input(), new Output(), null, null, null};
+	
+
+}

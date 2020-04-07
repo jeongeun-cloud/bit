@@ -1,0 +1,136 @@
+package org.comstudy21.view;
+
+import org.comstudy21.model.People;
+
+public class Modify implements PhonebookView {
+
+	@Override
+	public void display() {
+		System.out.println(":::: 수정 기능 ::::");
+		System.out.print("수정 할 idx 입력 : ");
+		int idx = scan.nextInt();
+		boolean flag = false;
+		
+		for(int i=0; i<data.pArr.length; i++) {
+			if(idx == data.pArr[i].getIdx()) {
+				flag = true;
+				break;
+			}
+		}
+		if(!flag) {
+			System.out.println("수정 할 데이터를 찾을 수 없습니다.");
+			display();
+		} else {
+			System.out.println("수정 할 데이터를 찾았습니다.");
+			People newPeople = new People();
+			System.out.print("새 이름 입력 : ");
+			newPeople.setName(scan.next());
+			System.out.print("새 전화번호 : ");
+			newPeople.setPhone(scan.next());
+			data.people = newPeople;
+			System.out.println("수정이 완료 되었습니당");			
+		}
+
+	}
+
+}
+
+
+
+//	People[] pArr = data.pArr;
+//	
+//	System.out.println(":::: 수정 기능 ::::");
+//	System.out.println("1.번호로 찾기 2.이름으로 찾기 3.전화번호로 찾기");
+//	System.out.print("Choice : ");
+//	int selectNum = scan.nextInt();
+//	
+//	switch(selectNum) {
+//	case 1 : 
+//		System.out.print("고유 번호(idx) 입력 : ");
+//		int userNum = scan.nextInt();
+//		
+//		for(int i=0; i<pArr.length; i++){
+//			if(pArr[i].getIdx() == userNum){
+//				System.out.println("1.이름 수정 2.전화번호 수정 ");
+//				System.out.print("Choice : ");
+//				int modifyNum = scan.nextInt();
+//				
+//				switch(modifyNum){
+//				case 1 :
+//					System.out.print("수정할 새 이름 입력 : ");
+//					String newName = scan.next();
+//					pArr[userNum].setName(newName);
+//					break;
+//				case 2 :
+//					System.out.print("수정할 새 번호 입력 : ");
+//					String newPhone = scan.next();
+//					pArr[userNum].setPhone(newPhone);
+//					break;
+//				}
+//				
+//				System.out.println("수정이 완료되었습니다. 출력을 통해 확인하세요!");
+//				return;
+//			}
+//		}
+//		System.out.println("일치하는 정보가 없습니다");
+//		break;
+//		
+//		
+//	case 2:
+//		System.out.print("이름 입력 : ");
+//		String userName = scan.next();
+//		
+//		for(int i=0; i<pArr.length; i++){
+//			if(pArr[i].getName().equals(userName)){
+//				System.out.print("1.이름 수정 2.전화번호 수정 ");
+//				int modifyNum = scan.nextInt();
+//				
+//				switch(modifyNum){
+//				case 1 :
+//					System.out.print("수정할 새 이름 입력 : ");
+//					String newName = scan.next();
+//					pArr[i].setName(newName);
+//				
+//				case 2 :
+//					System.out.print("수정할 새 번호 입력 : ");
+//					String newPhone = scan.next();
+//					pArr[i].setPhone(newPhone);
+//				}
+//				
+//				System.out.println("수정이 완료되었습니다. 출력을 통해 확인하세요!");
+//				return;
+//			}else {
+//				System.out.println("일치하는 정보가 없습니다");
+//			}
+//		}
+//		break;
+//		
+//	case 3:
+//		System.out.print("전화번호 입력 : ");
+//		String userPhone = scan.next();
+//		
+//		for(int i=0; i<pArr.length; i++){
+//			if(pArr[i].getPhone().contains(userPhone)){
+//				System.out.print("1.이름 수정 2.전화번호 수정 ");
+//				int modifyNum = scan.nextInt();
+//				
+//				switch(modifyNum){
+//				case 1 :
+//					System.out.print("수정할 새 이름 입력 : ");
+//					String newName = scan.next();
+//					pArr[i].setName(newName);
+//				
+//				case 2 :
+//					System.out.print("수정할 새 번호 입력 : ");
+//					String newPhone = scan.next();
+//					pArr[i].setPhone(newPhone);
+//				}
+//				
+//				System.out.println("수정이 완료되었습니다. 출력을 통해 확인하세요!");
+//				return;
+//			}else {
+//				System.out.println("일치하는 정보가 없습니다");
+//			}
+//		}
+//		break;
+//	}

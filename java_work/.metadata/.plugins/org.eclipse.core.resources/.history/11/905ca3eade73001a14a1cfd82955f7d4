@@ -1,0 +1,14 @@
+package org.comstudy21.view;
+
+public class Input implements View {
+	
+	@Override
+	public void display() {
+		System.out.println(":::::::::: MENU ::::::::::");
+		for(int i=0; i<menuArr.length; i++) {
+			System.out.printf("%d.%s " , i+1, menuArr[i]);
+		}
+		
+	}
+
+}

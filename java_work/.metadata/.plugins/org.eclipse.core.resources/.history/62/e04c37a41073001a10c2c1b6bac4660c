@@ -1,0 +1,17 @@
+package org.comstudy21.view;
+
+import org.comstudy21.model.People;
+
+public class Modify implements PhonebookView {
+
+	@Override
+	public void display() {
+
+		People[] pArr = data.pArr;
+		
+		System.out.println(":::: 출력 기능 ::::");
+		
+		
+	}
+
+}

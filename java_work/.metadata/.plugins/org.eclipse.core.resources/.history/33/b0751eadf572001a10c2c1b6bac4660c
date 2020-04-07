@@ -1,0 +1,11 @@
+package org.comstudy21.resource;
+
+import org.comstudy21.controller.PhonebookController;
+
+// 상수를 모아두는 곳 
+public class R {
+	public static final String appName = "Phone Book";
+	public static final PhonebookController controller = new PhonebookController();
+	public static final int MAX = 100;
+	
+}

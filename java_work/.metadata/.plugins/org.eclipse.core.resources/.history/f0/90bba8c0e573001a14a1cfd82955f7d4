@@ -1,0 +1,10 @@
+package org.comstudy21.controller;
+
+import org.comstudy21.resource.Data;
+
+public class Controller {
+	public static void service(Data data) {
+		
+	}
+
+}

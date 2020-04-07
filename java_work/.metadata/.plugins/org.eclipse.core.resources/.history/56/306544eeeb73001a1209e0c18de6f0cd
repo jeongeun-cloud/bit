@@ -1,0 +1,48 @@
+package org.comstudy21.controller;
+
+import static org.comstudy21.resource.R.*;
+
+public class Controller {
+	public static void service() {
+
+		try {
+			//viewArr[data.no].display();
+			
+			switch(data.no) {
+			case 1 : 
+				viewArr[data.no].display();
+				break;
+			case 2 : 
+				viewArr[data.no].display();
+				break;
+			case 3 : 
+				viewArr[data.no].display();
+				break;
+			case 4 : 
+				viewArr[data.no].display();
+				break;
+			case 5 : 
+				viewArr[data.no].display();
+				break;
+			case 6 : 
+				System.out.println("---------- 프로그램 종료 ----------");
+				System.exit(0);
+				break;
+			default : 
+				System.out.println("해당 사항 없습니다!");
+				break;
+			}
+			
+			viewArr[data.no].display();
+			
+		} catch (NullPointerException e) {
+			System.out.println("주의 : 메뉴가 준비 되지 않았습니다.");
+		} catch (Exception e) {
+			System.out.println("주의 : 해당 사항 없습니다.");
+		}
+		
+		data.no = 0;
+		service();
+	}
+
+}

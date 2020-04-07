@@ -1,0 +1,14 @@
+package view;
+
+public class Output implements View {
+
+	@Override
+	public void display() {
+		
+		System.out.println(outputTitle);
+		
+		
+
+	}
+
+}

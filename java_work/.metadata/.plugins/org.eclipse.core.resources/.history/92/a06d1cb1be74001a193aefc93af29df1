@@ -1,0 +1,8 @@
+package resource;
+
+import java.util.Scanner;
+
+public interface R {
+	
+	Scanner scan = new Scanner(System.in);
+}

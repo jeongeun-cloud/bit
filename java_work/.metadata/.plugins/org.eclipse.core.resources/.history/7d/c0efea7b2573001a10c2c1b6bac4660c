@@ -1,0 +1,50 @@
+package org.comstudy21.model;
+
+import static org.comstudy21.resource.R.*;
+
+public class DAO {
+	// DB나 파일에 데이터를 저장하는 역할
+	private People[] pArr = new People[MAX];
+	private int top = 0;
+	
+	
+	// 싱글톤 패턴
+	// 한개만 있어도 되는 것은 싱글톤 (외부에서 더 이상 생성 못시키도록)
+	// 생성자를 public이 아닌 private으로 선언
+	private DAO() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	private static DAO instance;
+	
+	public static DAO getInstance() {
+		if(instance == null) {
+			instance = new DAO();
+		}
+		return instance;
+	}
+	
+	
+	public void insert(People dto) {
+		if(top >= MAX) {
+			System.out.println("더 이상 입력할 수 없습니다");
+			return;
+		}
+		pArr[top++] = dto;
+	}
+	
+	public People[] select() {
+		People[] arr = new People[top];
+		for(int i=0; i<arr.length; i++) {
+			People dto = new People();
+			dto.setIdx(pArr[i].getIdx());
+			dto.setName(pArr[i].getName());
+			dto.setPhone(pArr[i].getPhone());
+			arr[i] = dto;
+		}
+		return arr;	// 모든 내용을 카피해서 외부에서 수정해도 원본이 바뀌지 않도록 함
+		// return pArr;	// (private 선언한)참조변수를 그대로 넣는 것은 보안 취약  
+	}
+	
+	
+}

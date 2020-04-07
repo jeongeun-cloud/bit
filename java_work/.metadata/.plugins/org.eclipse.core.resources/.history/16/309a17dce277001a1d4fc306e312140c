@@ -1,0 +1,50 @@
+package book_practice;
+
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class Ex06 {
+static Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("10초에 가까운 사람이 이기는 게임입니다.");
+		System.out.print("주정은 시작 <Enter>키 >>");
+		scan.nextLine();
+
+		Calendar now = Calendar.getInstance();
+		int nowSec = now.get(Calendar.SECOND);
+		System.out.println("\t현재 초 시간 = " + nowSec);
+
+		
+		System.out.print("10초 예상 후 <Enter>키 >>");
+		scan.nextLine();
+		Calendar after = Calendar.getInstance();
+		int afterSec = after.get(Calendar.SECOND);
+		System.out.println("\t현재 초 시간 = " + afterSec);
+		int result = Math.abs(nowSec-afterSec);
+		System.out.println(result);
+		
+		
+		System.out.print("문장원 시작 <Enter>키 >>");
+		scan.nextLine();
+		Calendar now2 = Calendar.getInstance();
+		int nowSec2 = now2.get(Calendar.SECOND);
+		System.out.println("\t현재 초 시간 = " + nowSec2);
+
+		
+		System.out.print("10초 예상 후 <Enter>키 >>");
+		scan.nextLine();
+		Calendar after2 = Calendar.getInstance();
+		int afterSec2 = after2.get(Calendar.SECOND);
+		System.out.println("\t현재 초 시간 = " + afterSec2);
+		int result2 = Math.abs(now2.get(Calendar.SECOND) - after2.get(Calendar.SECOND));
+		System.out.println(result2);
+		
+		
+		//System.out.print("주정은의 결과 : %d, 문장원의 결과 %d, 승자는 %s");
+		
+	}
+	
+}

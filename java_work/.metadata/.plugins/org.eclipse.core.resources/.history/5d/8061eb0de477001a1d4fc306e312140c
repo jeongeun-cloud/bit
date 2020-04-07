@@ -1,0 +1,23 @@
+package book_practice;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Ex07 {
+
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		System.out.print(">> ");
+		String query = scan.nextLine();
+		
+		StringTokenizer st = new StringTokenizer(query," ");
+		
+		System.out.println("어절 개수는 : " + st.countTokens());
+		
+		if(query.equals("그만")) {
+			System.out.println("시스템을 종료합니다!");
+			System.exit(0);
+		}
+	}
+	
+}

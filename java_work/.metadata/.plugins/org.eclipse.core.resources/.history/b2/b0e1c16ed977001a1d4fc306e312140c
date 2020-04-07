@@ -1,0 +1,16 @@
+package book_practice;
+
+import java.util.StringTokenizer;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		StringTokenizer st = new StringTokenizer("a=3,b=6,c=5",",=");
+		
+		
+		while(st.hasMoreTokens()) {
+			System.out.println(st.nextToken());
+		
+		}
+	}
+}

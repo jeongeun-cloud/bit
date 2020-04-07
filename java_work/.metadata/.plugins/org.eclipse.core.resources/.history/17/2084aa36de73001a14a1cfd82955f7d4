@@ -1,0 +1,5 @@
+package org.comstudy21.view;
+
+public interface View extends R {
+	void display();
+}

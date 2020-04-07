@@ -1,0 +1,17 @@
+package org.comstudy21.except;
+
+public class Ch06Ex04 {
+
+	public static void test() throws Exception {
+		throw new Exception("사용자 정의 예외 발생!");
+	}
+	
+	public static void main(String[] args) {
+		try {
+			test();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	
+}

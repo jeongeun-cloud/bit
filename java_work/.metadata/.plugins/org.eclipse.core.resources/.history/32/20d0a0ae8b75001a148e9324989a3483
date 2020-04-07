@@ -1,0 +1,14 @@
+package view;
+
+public class Search implements View {
+
+	@Override
+	public void display() {
+		System.out.println();
+		System.out.println(searchTitle);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package ex06_result;
+
+public class Result {
+	int x, y;
+	
+	public Result() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

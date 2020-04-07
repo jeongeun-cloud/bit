@@ -1,0 +1,16 @@
+package org.comstudy21.thread;
+
+class MyThread extends Thread {
+	@Override
+	public void run() {
+		System.out.println(this.currentThread());
+		System.out.println("MyThreadÀÇ run ÇÔ¼ö");
+	}
+}
+
+public class Ch06Ex02 {
+	public static void main(String[] args) {
+		Thread th = Thread.currentThread();
+		System.out.println(th.currentThread());
+	}
+}

@@ -1,0 +1,12 @@
+package book_practice;
+
+import java.util.Scanner;
+
+public class Ex10 {
+
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+	
+		
+	}
+}

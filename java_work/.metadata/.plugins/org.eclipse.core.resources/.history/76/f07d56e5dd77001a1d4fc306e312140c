@@ -1,0 +1,29 @@
+package book_practice;
+
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class Ex06 {
+static Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		Calendar now = Calendar.getInstance();
+		
+		System.out.println("10초에 가까운 사람이 이기는 게임입니다.");
+		System.out.print(" 주정은 시작 <Enter>키 >>");
+		scan.nextLine();
+		System.out.println("현재 초 시간 = " + now.get(Calendar.SECOND));
+		int userStart = now.get(Calendar.SECOND);
+		System.out.println(userStart);
+		System.out.print("10초 예상 후 <Enter>키 >>");
+		scan.nextLine();
+		System.out.println("현재 초 시간 = " + now.get(Calendar.SECOND));
+		int userEnd = userStart - now.get(Calendar.SECOND);
+		System.out.println(userEnd);
+		
+//		System.out.println(" 문장원 시작 <Enter>키 >>");
+//		scan.nextLine();
+//		System.out.print("현재 초 시간 = ");
+	}
+	
+}

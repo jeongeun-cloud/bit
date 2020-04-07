@@ -1,0 +1,32 @@
+package controller;
+
+import static resource.R.*;
+
+public class Controller {
+	
+	public static void service() {
+		
+		viewArr[data.no].display();
+		
+		try {
+			switch(data.no) {
+			case 1 : break;
+			case 2 : break;
+			case 3 : break;
+			case 4 : break;
+			case 5 : break;
+			case 6 : 
+				System.out.println("프로그램을 종료 합니다! BYE");
+				System.exit(0);
+				break;
+			default :
+				System.out.println("번호를 잘 못 입력 하셨습니다.");
+				return;
+			}
+		} catch (NullPointerException e) {
+			System.out.println("해당 메뉴는 준비 되지 않았습니다.");
+			return;
+		}
+		
+	}
+}

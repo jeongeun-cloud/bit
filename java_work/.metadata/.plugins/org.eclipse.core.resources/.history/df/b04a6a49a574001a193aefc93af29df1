@@ -1,0 +1,42 @@
+package org.comstudy21.page321.ex12;
+
+abstract class Shape {
+	public Shape next;
+	public Shape() {next = null;}
+	public void setNext(Shape obj) {next = obj;}
+	public Shape getNext() {return next;}
+	public abstract void draw();
+}
+
+class Line extends Shape {
+	public void draw() {
+		System.out.println("Line");
+	}
+}
+
+class Rect extends Shape {
+	public void draw() {
+		System.out.println("Rect");
+	}
+}
+
+class Circle extends Shape {
+	public void draw() {
+		System.out.println("Circle");
+	}
+}
+
+
+public class GraphicEditor {
+	private static void print(Shape shape) {
+		shape.draw();
+	}
+
+	public static void main(String[] args) {
+		Line line = new Line();
+		
+		print(line);
+	}
+
+	
+}

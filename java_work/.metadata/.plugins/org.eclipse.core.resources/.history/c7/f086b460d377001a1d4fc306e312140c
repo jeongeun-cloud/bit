@@ -1,0 +1,19 @@
+package book_practice;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		String a = "Hello";
+		String b = "Hello";
+		String c = "Java";
+		String d = new String("Hello");
+		String e = new String("Java");
+		String f = new String("Java");
+		
+		System.out.println(a==b);
+		System.out.println(a==c);
+		System.out.println(a==d);
+		System.out.println(a==e);
+		System.out.println(a==f);
+	}
+}

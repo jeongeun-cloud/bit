@@ -1,0 +1,49 @@
+package book_practice;
+
+class Point {
+	private int x, y;
+	public Point (int x, int y) {
+		this.x = x; 
+		this.y = y;
+	}
+	public int getX() {
+		return x;
+	}
+	public int getY() {
+		return y;
+	}
+	protected void move (int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+}
+
+class ColorPrint extends Point {
+
+	public ColorPrint(int x, int y, String color) {
+
+		
+	}
+
+	public void setXY(int x, int y) {
+		this.getX();
+		this.getY();
+	}
+
+	public void setColor(String color) {
+		
+		
+	}
+	
+}
+
+public class Page317 {
+	public static void main(String[] args) {
+		ColorPrint cp = new ColorPrint(5, 5, "YELLOW");
+		cp.setXY(10,20);
+		cp.setColor("RED");
+		String str = cp.toString();
+		System.out.println(str + "¿‘¥œ¥Ÿ.");
+	}
+}
