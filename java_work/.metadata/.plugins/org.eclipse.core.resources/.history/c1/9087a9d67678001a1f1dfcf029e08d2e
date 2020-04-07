@@ -11,8 +11,8 @@ public class Ch06Ex04 {
 		while(st.hasMoreElements()) {
 			String token = st.nextToken();
 			System.out.println(token);
-			if(Character.isDigit(token.charAt(0))){ // boolean isDisit(char ch); 문자를 숫자인지 판별
-				total += Integer.parseInt(token); // String 을 Int형으로 형변환 하기 위한 메소드 Integer.parseInt
+			if(Character.isDigit(token.charAt(0))){
+				total += Integer.parseInt(token);
 			}
 		}
 		System.out.println("합은 " + total);
