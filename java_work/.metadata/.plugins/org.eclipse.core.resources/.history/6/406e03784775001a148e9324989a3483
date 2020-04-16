@@ -1,9 +1,0 @@
-package resource;
-
-import model.DTO;
-
-public class Data {
-	public int idx;
-	public DTO[] dtoArr;
-	public DTO dto;
-}

@@ -1,0 +1,25 @@
+package book_practice;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Ex03 {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		HashMap<String, Integer> nations = new HashMap<String, Integer>();
+		
+		System.out.println("나라 이름과 인구를 입력하세요. (예 : Korea 5000)");
+		
+		System.out.print("나라이름, 인구 >> ");
+		String s = scan.next();
+		String[] sArr = s.split(" ");
+		
+		System.out.println(s);
+		System.out.println(sArr[0]);
+		System.out.println(sArr[2]);
+		
+		//nations.put(sArr[0], sArr[1]);
+		
+	}
+
+}

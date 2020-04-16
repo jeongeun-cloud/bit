@@ -36,7 +36,7 @@ public class Calculator extends MyFrame{
 	Button plusbtn = new Button("+");
 	
 	
-	Panel panel = new Panel(new GridLayout(6, 5, 5, 5));
+	Panel panel = new Panel(new GridLayout(5, 5, 5, 5));
 	Panel center = new Panel(new GridLayout());
 	Label label = new Label("0", Label.RIGHT);
 

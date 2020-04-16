@@ -1,0 +1,27 @@
+package org.comstudy21.ch09;
+
+import java.awt.Frame;
+
+public class MyFrame extends Frame {
+	
+	public MyFrame() {
+		this("MyFrame");
+	}
+
+	public MyFrame(String title) {
+		this(title, 480, 320);
+	}
+	
+	public MyFrame(String title, int width, int height) {
+		super(title);
+		setSize(width, height);
+		
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new MyFrame("고객 관리 시스템", 640, 400);
+
+	}
+
+}

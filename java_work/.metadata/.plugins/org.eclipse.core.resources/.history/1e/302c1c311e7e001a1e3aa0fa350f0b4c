@@ -1,0 +1,14 @@
+package view;
+
+import javax.swing.JFrame;
+import javax.swing.text.html.ListView;
+
+public class MainFrame extends JFrame {
+	public MainFrame() {
+		ListView listView = new ListView();
+	}
+	
+	public static void main(String[] args) {
+		new MainFrame();
+	}
+}

@@ -1,0 +1,19 @@
+package org.comstudy21.swing;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class DialogExam extends JFrame {
+	
+	public DialogExam() {
+		//JOptionPane.showMessageDialog(this, "가입이 성공적으로 완료되었습니다.");
+		
+		String inputMsg =JOptionPane.showInputDialog("");
+	}
+
+	public static void main(String[] args) {
+		new DialogExam();
+		
+	}
+
+}

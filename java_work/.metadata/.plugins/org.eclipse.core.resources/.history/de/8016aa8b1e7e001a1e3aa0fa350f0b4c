@@ -1,0 +1,19 @@
+package view;
+
+import javax.swing.JFrame;
+
+public class MainFrame extends JFrame {
+	
+	public MainFrame() {
+		ListView listView = new ListView();
+		
+		add(listView);
+		
+		setSize(750, 550);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new MainFrame();
+	}
+}

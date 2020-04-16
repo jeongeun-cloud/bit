@@ -1,0 +1,22 @@
+package org.comstudy21.view;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class MainFrame extends JFrame {
+	
+	JPanel content = null;
+	
+	public MainFrame() {
+		content = (JPanel)getContentPane();
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		
+		add(BorderLayout.NORTH, new TitleView());
+		
+		setSize(750, 550);
+		setVisible(true);
+	}
+	
+}

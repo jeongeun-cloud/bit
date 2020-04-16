@@ -1,0 +1,29 @@
+package org.comstudy21.ch09;
+
+import java.awt.Button;
+import java.awt.GridLayout;
+import java.awt.Panel;
+
+public class Ch09Ex07 extends MyFrame {
+	Button playBtn = new Button("Play");
+	Button stopBtn = new Button("Stop");
+	Button openBtn = new Button("Open");
+	
+	Panel panel = new Panel();
+	
+	public Ch09Ex07() {
+		panel.add(playBtn);
+		panel.add(stopBtn);
+		panel.add(openBtn);
+		
+		this.add("South", panel);
+		
+		
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Ch09Ex07();
+	}
+
+}

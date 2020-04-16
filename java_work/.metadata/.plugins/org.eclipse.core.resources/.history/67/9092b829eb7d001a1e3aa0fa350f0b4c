@@ -1,0 +1,25 @@
+package org.comstudy21.controller;
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JTable;
+
+
+public class DeleteController implements Controller{
+	
+	public DeleteController() {
+		
+	}
+	
+	
+
+	@Override
+	public void service() {
+				
+		
+
+	}
+
+
+}

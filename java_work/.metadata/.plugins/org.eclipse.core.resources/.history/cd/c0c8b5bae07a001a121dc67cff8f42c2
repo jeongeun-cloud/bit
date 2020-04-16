@@ -1,0 +1,19 @@
+package org.comstudy21.swing;
+
+import javax.swing.JFrame;
+
+public class JFrameExam extends JFrame {
+	
+	public JFrameExam() {
+		
+		setSize(300,400);
+		setVisible(true);
+		
+	}
+
+	public static void main(String[] args) {
+		new JFrameExam();
+
+	}
+
+}

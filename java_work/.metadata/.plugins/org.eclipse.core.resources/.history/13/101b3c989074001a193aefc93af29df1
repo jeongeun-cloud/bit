@@ -1,5 +1,0 @@
-package org.comstudy21.page319.ex09;
-
-public interface Stack {
-
-}

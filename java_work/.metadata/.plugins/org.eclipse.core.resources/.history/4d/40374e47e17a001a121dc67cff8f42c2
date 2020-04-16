@@ -1,0 +1,21 @@
+package org.comstudy21.swing;
+
+import javax.swing.JFrame;
+
+public class JFrameExam extends JFrame {
+	
+	public JFrameExam() {
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // DISPOSE_ON_CLOSE 자원을 다 반납 후 close		
+		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 강제종료
+		
+		setSize(300,400);
+		setVisible(true);
+		
+	}
+
+	public static void main(String[] args) {
+		new JFrameExam();
+
+	}
+
+}

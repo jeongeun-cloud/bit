@@ -1,0 +1,14 @@
+package org.comstudy21.ch09;
+
+import java.awt.Frame;
+
+public class Ch09Ex01 {
+	
+	public static void main(String[] args) {
+		Frame f = new Frame("java");
+		f.setSize(640, 400);
+		f.setVisible(true);
+		
+	}
+
+}

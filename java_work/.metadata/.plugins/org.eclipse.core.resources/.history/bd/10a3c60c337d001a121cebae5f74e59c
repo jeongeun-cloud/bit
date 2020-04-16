@@ -1,0 +1,19 @@
+package org.comstudy21.view;
+
+public class TitleView extends View {
+
+	public TitleView() {
+		init();
+	}
+
+	@Override
+	public void init() {
+		
+	}
+
+	@Override
+	public void start() {
+
+	}
+
+}

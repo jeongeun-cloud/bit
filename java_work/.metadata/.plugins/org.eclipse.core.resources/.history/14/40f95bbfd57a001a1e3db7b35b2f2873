@@ -1,0 +1,25 @@
+package org.comstudy21.graphic;
+
+import java.awt.Graphics;
+
+public class Ex01 extends MyFrame {
+	
+	public Ex01() {
+		
+		setVisible(true);
+	}
+	
+	@Override
+	public void paint(Graphics g) {
+		System.out.println("paint 메소드 호출!");
+	}
+	
+	@Override
+	public void repaint() {
+		System.out.println("repaint 메소드 호출!");
+	}
+	
+	public static void main(String[] args) {
+		new Ex01();
+	}
+}

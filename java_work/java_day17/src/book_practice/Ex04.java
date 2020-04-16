@@ -8,31 +8,28 @@ public class Ex04 {
 	public static void main(String[] args) {
 		Vector<Integer> v = new Vector<>();
 		
-		int rate = 0;
+		int sum = 0;
+		int avg = 0;
 		
 		while (true) {
 			System.out.print("강수량 입력 (0 입력시 종료) >> ");
-			v.add(scan.nextInt());
+			int rate = scan.nextInt();
 			
-			for (int i = 0; i < v.size(); i++) {
-				
-				rate += v.get(i);
-				System.out.println(rate);
-				rate /= i+1;
-				System.out.println(rate);
-				
-				System.out.println(v.get(i));
-				
-				if (v.elementAt(i) == 0) {
-					System.exit(0);
-				}
-				
+			if(rate == 0) {
+				System.exit(0);
+			}
+
+			v.add(rate);
+			sum += rate;
+			
+			for(int i=0; i<v.size(); i++) {
+				System.out.print(v.get(i) + " ");
 			}
 			
-			System.out.println("현재 평균 " + rate); 
+			avg = sum/v.size();
 			
-			
+			System.out.println();
+			System.out.println("현재 평균 " + avg); 
 		}
 	}
-	
 }

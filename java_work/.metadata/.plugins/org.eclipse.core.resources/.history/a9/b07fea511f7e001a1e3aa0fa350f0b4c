@@ -1,0 +1,17 @@
+package view;
+
+import javax.swing.JLabel;
+
+public class ListView extends View {
+
+	public ListView() {
+		
+	}
+
+	@Override
+	public void display() {
+		add(new JLabel("hello"));
+
+	}
+
+}

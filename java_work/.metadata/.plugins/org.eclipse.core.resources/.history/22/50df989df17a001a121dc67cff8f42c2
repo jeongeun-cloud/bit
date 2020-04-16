@@ -1,0 +1,12 @@
+package org.comstudy21.swing;
+
+import javax.swing.JOptionPane;
+
+public class DialogExam {
+
+	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null, "°æ°í");
+
+	}
+
+}

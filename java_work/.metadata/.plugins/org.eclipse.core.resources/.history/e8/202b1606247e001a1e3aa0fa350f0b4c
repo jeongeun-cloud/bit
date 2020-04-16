@@ -1,0 +1,16 @@
+package view;
+
+import java.awt.Color;
+
+import javax.swing.JLabel;
+
+public class InputView extends View {
+
+	@Override
+	public void display() {
+		add(new JLabel("input View"));
+		setBackground(Color.magenta);
+
+	}
+
+}

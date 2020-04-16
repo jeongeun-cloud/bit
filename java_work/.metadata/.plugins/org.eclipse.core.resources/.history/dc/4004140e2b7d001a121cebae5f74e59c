@@ -1,0 +1,56 @@
+package test.json;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public class Ex01_test01 {
+	
+	public static void main(String[] args) {
+		
+		JSONObject st = new JSONObject();
+		st.put("name", "홍길동");
+		st.put("mail", "hong@a.com");
+		st.put("phone", "010-1111-1111");
+		
+		JSONArray stArr = new JSONArray();
+		stArr.put(st);
+		
+		st = new JSONObject();
+		st.put("name", "김길동");
+		st.put("mail", "kim@a.com");
+		st.put("phone", "010-2222-2222");
+		stArr.put(st);
+		
+		//System.out.println(stArr.toString(2));
+		
+		JSONObject jOb = new JSONObject();
+		jOb.put("StudentArr", stArr);
+		
+		System.out.println(jOb.toString(2));
+		
+		File file = new File("student info.json");
+		try {
+			if (!file.exists()) {
+				if (file.createNewFile()) {
+					System.out.println("새로운 파일을 생성하였습니다!");
+				}
+			} else {
+				System.out.println("이미 파일이 존재합니다");
+			}
+			FileWriter fw = new FileWriter(file);
+			fw.write(jOb.toString(2));
+			System.out.println("파일 쓰기 완료!");
+			if(fw != null){
+				fw.close();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

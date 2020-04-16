@@ -1,8 +1,0 @@
-package org.comstudy21.except;
-
-public class Ch06Ex01 {
-	public static void main(String[] args) {
-		String name = null;
-		System.out.println("name = " + name.toString());
-	}
-}

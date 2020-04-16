@@ -1,0 +1,50 @@
+package org.comstudy21.ch09;
+
+import java.awt.Button;
+import java.awt.GridLayout;
+import java.awt.Label;
+import java.awt.Panel;
+
+
+
+public class Calculator extends MyFrame {
+	Button[] btns = new Button[10];
+	{
+		for(int i=0; i<btns.length; i++) {
+			btns[i] = new Button("" + i);
+		}
+	}
+
+
+	private String[] arr = { "MC", "MR", "MS", "M+", "M-", "¡ç", "CE", "C", "¡¾",
+            "¡î", "7", "8", "9", "/", "%", "4", "5", "6", "*", "1/x", "1", "2",
+            "3", "-", "=", "0", ".", "+"};
+
+	
+	Panel panel = new Panel(new GridLayout(6, 5, 5, 5));
+	Panel center = new Panel(new GridLayout());
+	Label label = new Label("0");
+
+	
+	public Calculator(String title) {
+		super(title, 300, 320);
+
+		center.add(label);
+		this.add("North",center);
+		
+		for(int i=0; i<arr.length; i++) {
+			panel.add(new Button(arr[i]));
+		}	
+		this.add("South", panel);
+		
+		
+		
+
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Calculator("°è»ê±â");
+	}
+	
+}

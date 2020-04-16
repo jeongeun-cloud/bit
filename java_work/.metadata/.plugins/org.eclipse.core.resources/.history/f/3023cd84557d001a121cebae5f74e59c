@@ -1,0 +1,15 @@
+package org.comstudy21.controller;
+
+public class InputController implements Controller {
+
+	public InputController() {
+		
+	}
+
+	@Override
+	public void service() {
+		
+		
+	}
+
+}

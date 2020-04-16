@@ -1,0 +1,49 @@
+package org.comstudy21.jtable;
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class JTableExam extends JFrame {
+	JPanel contentPane;
+	JScrollPane infoScrollPane;
+	JTable searchResultTable;
+	DefaultTableModel tableModel;
+	
+	public JTableExam() {
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		contentPane = (JPanel)getContentPane();
+		
+		Object[][] data = {
+				{"강지아","jeea@mem.com","1111", 20},
+				{"이장미", "rose@mem.com", "2222", 30},
+				{"김백합", "lily@mem.com", "3333", 25},
+		};
+		String[] colunms = {"이름","E-mail","전화번호","나이"};
+		tableModel = new DefaultTableModel(data, colunms);
+		searchResultTable = new JTable(tableModel);
+		infoScrollPane = new JScrollPane(searchResultTable);
+		
+		tableModel.setRowCount(20);
+		
+		JTable table = searchResultTable;
+		table.addMouseListener(new MouseAdapter() {
+			
+		});
+		
+		contentPane.add(infoScrollPane);
+		
+		setSize(640,480);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new JTableExam();
+	}
+
+}

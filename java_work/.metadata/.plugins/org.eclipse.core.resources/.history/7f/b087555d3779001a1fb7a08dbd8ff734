@@ -1,0 +1,26 @@
+package org.comstudy21.ch07;
+
+import java.util.Vector;
+
+public class Ch07Ex01 {
+
+	public static void main(String[] args) {
+		// 정수 값만 다루는 제네릭 벡터 생성
+		// 타입 매개변수를 Integer 타입으로 구체화
+		Vector<Integer> v = new Vector<Integer>();
+		
+		// 추가 (append)
+		v.add(5);
+		v.add(4);
+		v.add(-1);
+		
+		// 삽입 (insert)
+		// add 메소드로 추가와 삽입 모두 가능
+		v.add(2, 100);		
+		System.out.println(v);
+		System.out.println(v.size());
+		System.out.println(v.capacity());
+		
+	}
+
+}

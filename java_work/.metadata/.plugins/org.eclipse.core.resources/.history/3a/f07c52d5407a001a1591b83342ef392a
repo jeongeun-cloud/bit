@@ -1,0 +1,14 @@
+package homework;
+
+import org.comstudy21.ch09.MyFrame;
+
+public class MyCalc2 extends MyFrame {
+
+	public MyCalc2() {
+		
+	}
+	
+	public static void main(String[] args) {
+		new MyCalc2();
+	}
+}

@@ -1,0 +1,31 @@
+package homework;
+
+import java.awt.Button;
+
+import org.comstudy21.ch09.MyFrame;
+
+public class MyCalc2 extends MyFrame {
+	Button[] btns = new Button[12];
+
+	public MyCalc2() {
+		setLayout(null); // 기본 레이아웃 매니저를 제거한다.
+		
+		for(int i=0; i<btns.length; i++) {
+			btns[i] = new Button(""+i);
+			add(btns[i]);
+		}
+		int x = 20;
+		int y = 100;
+		for(int i=0; i<btns.length; i++) {
+			btns[i].setBounds(x, y, 30, 100);
+			x += 40;
+			y += 30;
+		}
+		
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new MyCalc2();
+	}
+}

@@ -1,0 +1,15 @@
+package view;
+
+import javax.swing.JFrame;
+
+public class MainFrame extends JFrame {
+	public MainFrame() {
+		ListView listView = new ListView();
+		
+		add(listView);
+	}
+	
+	public static void main(String[] args) {
+		new MainFrame();
+	}
+}

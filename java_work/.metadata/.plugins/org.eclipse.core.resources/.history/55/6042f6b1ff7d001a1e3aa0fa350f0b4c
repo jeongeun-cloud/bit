@@ -1,0 +1,26 @@
+package org.comstudy21.controller;
+
+import org.comstudy21.model.Member;
+
+public class DeleteController implements Controller{
+	
+	public DeleteController() {
+		
+	}
+	
+	@Override
+	public void service() {
+		String name = nameField.getText();
+		String email = emailField.getText();
+		String phone = phoneField.getText();
+		int no = Integer.parseInt(noLable.getText().toString());
+		
+		Member dto = new Member(no, name, email, phone);
+		dao.delete(dto);
+		
+		nameField.setText(null);
+		emailField.setText(null);
+		phoneField.setText(null);
+	}
+
+}

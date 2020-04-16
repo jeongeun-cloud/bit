@@ -1,0 +1,15 @@
+package org.comstudy21.controller;
+
+public class ListController implements Controller {
+
+	public ListController() {
+		
+	}
+
+	@Override
+	public void service() {
+		
+
+	}
+
+}

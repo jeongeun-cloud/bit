@@ -7,7 +7,8 @@ import org.comstudy21.ch09.MyFrame;
 public class MyCalc2 extends MyFrame {
 	Button[] btns = new Button[12];
 
-	public MyCalc2() {
+	public MyCalc2(String title) {
+		super(title);
 		setLayout(null); // 기본 레이아웃 매니저를 제거한다.
 		
 		for(int i=0; i<btns.length; i++) {
@@ -18,7 +19,7 @@ public class MyCalc2 extends MyFrame {
 		int y = 100;
 		for(int i=1; i<btns.length; i++) {
 			if(i == 10) {
-				btns[i].setBounds(x, y, 83, 25);
+				btns[i].setBounds(x, y, 83, 25); // 위치 지정
 				x += 43;
 			} else {
 				btns[i].setBounds(x, y, 40, 25);
@@ -35,6 +36,6 @@ public class MyCalc2 extends MyFrame {
 	}
 	
 	public static void main(String[] args) {
-		new MyCalc2();
+		new MyCalc2("계산기");
 	}
 }

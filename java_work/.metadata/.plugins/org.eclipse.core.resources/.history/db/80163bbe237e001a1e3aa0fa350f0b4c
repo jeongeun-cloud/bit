@@ -1,0 +1,10 @@
+package resource;
+
+import java.util.Vector;
+
+import javax.swing.table.DefaultTableModel;
+
+public interface R {
+	DefaultTableModel dm = new DefaultTableModel(0,4);
+	Vector<String> columnIdentifiers = new Vector<>();s
+}

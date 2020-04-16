@@ -1,0 +1,113 @@
+package org.comstudy21.ch09;
+
+import java.awt.Button;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.Label;
+import java.awt.Panel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
+
+public class Calculator extends MyFrame implements ActionListener{
+
+	Button mcbtn = new Button("MC");
+	Button mrbtn = new Button("MR");
+	Button msbtn = new Button("MS");
+	Button mpbtn = new Button("M+");
+	Button mmbtn = new Button("M-");
+	Button backbtn = new Button("¡ç");
+	Button cebtn = new Button("CE");
+	Button cbtn = new Button("C");
+	Button pmbtn = new Button("¡¾");
+	Button rootbtn = new Button("¡î");
+	Button n7btn = new Button("7");
+	Button n8btn = new Button("8");
+	Button n9btn = new Button("9");
+	Button divbtn = new Button("/");
+	Button perbtn = new Button("%");
+	Button n4btn = new Button("4");
+	Button n5btn = new Button("5");
+	Button n6btn = new Button("6");
+	Button mulbtn = new Button("*");
+	Button xbtn = new Button("1/x");
+	Button n1btn = new Button("1");
+	Button n2btn = new Button("2");
+	Button n3btn = new Button("3");
+	Button minusbtn = new Button("-");
+	Button resbtn = new Button("=");
+	Button n0btn = new Button("0");
+	Button pointbtn = new Button(".");
+	Button plusbtn = new Button("+");
+	
+	
+	Panel panel = new Panel(new GridLayout(6, 5, 5, 5));
+	Panel center = new Panel(new GridLayout());
+	Label label = new Label("0", Label.RIGHT);
+
+	
+	public Calculator(String title) {
+		super(title, 280, 320);
+		
+		label.setFont(new Font(null, Font.BOLD, 30));
+		center.add(label);
+		this.add("North",center);
+
+		
+		panel.add(mcbtn);
+		panel.add(mrbtn);
+		panel.add(msbtn);
+		panel.add(mpbtn);
+		panel.add(mmbtn);
+		panel.add(backbtn);
+		panel.add(cebtn);
+		panel.add(cbtn);
+		panel.add(pmbtn);
+		panel.add(rootbtn);
+		panel.add(n7btn);
+		panel.add(n8btn);
+		panel.add(n9btn);
+		panel.add(divbtn);
+		panel.add(perbtn);
+		panel.add(n4btn);
+		panel.add(n5btn);
+		panel.add(n6btn);
+		panel.add(mulbtn);
+		panel.add(xbtn);
+		panel.add(n1btn);
+		panel.add(n2btn);
+		panel.add(n3btn);
+		panel.add(minusbtn);
+		panel.add(resbtn);
+		panel.add(n0btn);
+		panel.add(pointbtn);
+		panel.add(plusbtn);
+
+		
+		this.add("South", panel);
+		
+		play();
+
+		setVisible(true);
+	}
+	
+	private void play() {
+		
+	}
+
+	public static void main(String[] args) {
+		new Calculator("°è»ê±â");
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() instanceof Button) {
+			Button btn = (Button) e.getSource();
+			this.label.setText(btn.getLabel());
+
+		}
+		
+	}
+	
+}

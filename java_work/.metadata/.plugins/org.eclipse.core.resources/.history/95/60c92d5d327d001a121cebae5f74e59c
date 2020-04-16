@@ -1,0 +1,11 @@
+package org.comstudy21.view;
+
+import javax.swing.JFrame;
+
+import org.comstudy21.resource.R;
+
+public class View extends JFrame implements R {
+	
+	
+	
+}

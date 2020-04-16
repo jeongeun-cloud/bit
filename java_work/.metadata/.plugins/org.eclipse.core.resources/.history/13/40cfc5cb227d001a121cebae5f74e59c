@@ -1,0 +1,24 @@
+package test.json;
+
+import org.json.JSONObject;
+
+public class Ex01_1 {
+	
+	public static void main(String[] args) {
+		// JSONObject, JSONArray, JSONTokener ...
+		// {key:value, key:value ...}
+		// [{...},{...} ...]
+		
+		JSONObject student = new JSONObject();
+		student.put("name", "홍길동");
+		student.put("email", "hong@a.com");
+		student.put("phone", "010-1111-1111");
+		
+		System.out.println(student.toString(3));
+	}
+
+}
+
+// JSON-in (org.json) 
+// GSON - google 라이브러리 ---- 리플렉션이 가능
+// JSON관련 라이브러리는 많다.

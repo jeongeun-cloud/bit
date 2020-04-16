@@ -1,0 +1,17 @@
+package org.comstudy21.view;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class MainFrame extends JFrame {
+	
+	JPanel content = null;
+	
+	public MainFrame() {
+		content = (JPanel)getContentPane();
+		
+		setSize(750, 550);
+		setVisible(true);
+	}
+	
+}

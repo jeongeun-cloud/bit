@@ -1,0 +1,12 @@
+package org.comstudy21.swing;
+
+import javax.swing.JFrame;
+
+public class JFrameExam extends JFrame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

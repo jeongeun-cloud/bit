@@ -1,0 +1,36 @@
+package org.comstudy21.evt_handler;
+
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import org.comstudy21.view.ListView;
+
+public class MouseEventHandler implements MouseListener {
+	
+	ListView target = null;
+
+	public MouseEventHandler(ListView target) {
+		this.target = target;
+	}
+	
+	public MouseEventHandler() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	// mouseClicked과 mouseReleased는 비슷하지만 mouseReleased가 더 잘 먹음
+	public void mouseReleased(MouseEvent e) {
+		
+		
+	}
+	
+	@Override
+	public void mouseClicked(MouseEvent arg0) {}
+	@Override
+	public void mouseEntered(MouseEvent arg0) {}
+	@Override
+	public void mouseExited(MouseEvent e) {}
+	@Override
+	public void mousePressed(MouseEvent e) {}
+
+}

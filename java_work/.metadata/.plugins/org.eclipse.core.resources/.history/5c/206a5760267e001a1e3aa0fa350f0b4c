@@ -1,0 +1,17 @@
+package view;
+
+import java.awt.Font;
+
+import javax.swing.JLabel;
+
+public class TitleView extends View {
+	
+	@Override
+	public void display() {
+		JLabel title = new JLabel(":::::: °í°´ °ü¸® ½Ã½ºÅÛ ::::::");
+		title.setFont(new Font("±Ã¼­Ã¼", Font.BOLD, 25));
+		add(title);
+
+	}
+
+}

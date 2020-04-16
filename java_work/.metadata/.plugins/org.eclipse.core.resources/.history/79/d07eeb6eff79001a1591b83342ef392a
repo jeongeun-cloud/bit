@@ -1,0 +1,17 @@
+package org.comstudy21.ch09;
+
+import java.awt.Frame;
+
+public class Ch09Ex01 {
+	
+	public static void main(String[] args) {
+		Frame frame = new Frame("이름");
+		frame.setSize(640, 400);
+		
+		
+		// 보여지는 기능은 마지막에 설정한다.
+		frame.setVisible(true);
+		
+	}
+
+}

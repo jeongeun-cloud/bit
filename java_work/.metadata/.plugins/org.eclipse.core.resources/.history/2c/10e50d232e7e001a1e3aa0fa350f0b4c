@@ -1,0 +1,42 @@
+package evt_handler;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+
+import view.ButtonView;
+
+public class ButtonEventHandler implements ActionListener {
+	ButtonView target;
+	
+	public ButtonEventHandler(ButtonView buttonView) {
+		this.target = buttonView;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() instanceof JButton) {
+			JButton btn = (JButton)e.getSource();
+			
+			if(btn == target.allBtn) {
+				listController.service();
+			}
+			if(btn == target.insertBtn) {
+				
+			}
+			if(btn == target.searchBtn) {
+				
+			}
+			if(btn == target.deleteBtn) {
+				
+			}
+			if(btn == target.cancleBtn) {
+				
+			}
+			
+		}
+
+	}
+
+}

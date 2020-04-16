@@ -1,0 +1,66 @@
+package org.comstudy21.ch09;
+
+import java.awt.Button;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.Label;
+import java.awt.Panel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
+public class Calculator2 extends MyFrame implements ActionListener{
+
+	private String[] arr = { 
+			"+", "-", "*", "/",
+			"7", "8", "9", "CE",
+			"4", "5", "6", "=",
+			"1", "2", "3", "."};
+
+	Button[] btn = new Button[arr.length];
+	Button btn0 = new Button("0");
+	
+	Panel panel = new Panel(new GridLayout(5, 5, 5, 5));
+	Panel panel2 = new Panel(new GridLayout(1, 4, 5, 5));
+	Panel center = new Panel(new GridLayout());
+	Label label = new Label("0", Label.RIGHT);
+
+	
+	public Calculator2(String title) {
+		super(title, 280, 320);
+		
+		label.setFont(new Font(null, Font.BOLD, 30));
+		center.add(label);
+		this.add("North",center);
+		
+		
+		for(int i=0; i<arr.length; i++) {
+			btn[i] = new Button(arr[i]);
+			btn[i].addActionListener(this);
+			panel.add(btn[i]);
+		}	
+		this.add("South", panel);
+		
+		panel.add(panel2);
+		panel2.add(btn0);
+		
+
+
+		setVisible(true);
+	}
+	
+
+	public static void main(String[] args) {
+		new Calculator2("°è»ê±â");
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() instanceof Button) {
+			Button btnEvent = (Button) e.getSource();
+			label.setText(btnEvent.getLabel());
+		}
+		
+	}
+	
+}

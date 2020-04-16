@@ -1,7 +1,0 @@
-package org.comstudy21.resource;
-
-public class Data {
-	
-	public int no;
-
-}

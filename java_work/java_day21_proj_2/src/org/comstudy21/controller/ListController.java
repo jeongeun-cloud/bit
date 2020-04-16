@@ -30,14 +30,14 @@ public class ListController implements Controller {
 			System.out.println("출력 할 데이터가 없습니다!");
 		}
 		
-		dm.addTableModelListener(new TableModelListener() {
-			
-			@Override
-			public void tableChanged(TableModelEvent e) {
-				
-				
-			}
-		});
+//		dm.addTableModelListener(new TableModelListener() {
+//			
+//			@Override
+//			public void tableChanged(TableModelEvent e) {
+//				
+//				
+//			}
+//		});
 		
 	}
 

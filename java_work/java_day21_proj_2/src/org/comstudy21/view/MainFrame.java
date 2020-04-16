@@ -10,7 +10,7 @@ import org.comstudy21.resource.R;
 public class MainFrame extends JFrame implements R {
 	
 	JPanel content = null;
-	
+
 	public MainFrame() {
 		content = (JPanel)getContentPane();
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);

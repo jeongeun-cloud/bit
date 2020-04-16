@@ -1,0 +1,51 @@
+package org.comstudy21.controller;
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.Vector;
+
+import javax.swing.JTable;
+
+
+public class DeleteController implements Controller{
+	
+	public DeleteController() {
+		
+	}
+
+	@Override
+	public void service() {
+		
+		int[] rowArray = listView.table.getSelectedRows();
+		Vector<Integer> idxVector = new Vector<>();
+		for (int i = 0; i < rowArray.length; i++) {
+			int index = Integer.parseInt("" + dm.getValueAt(rowArray[i], 0));
+			idxVector.add(index);
+			System.out.println(index);
+		}
+		//dao.delete(idxVector);
+		
+		
+//		JTable table = new JTable(dm);
+//	
+//		if(table.getSelectedRow() == -1) {
+//			System.out.println("¿¡·¯");
+//		}else {
+//		
+//			table.addMouseListener(new MouseAdapter() {
+//				@Override
+//				public void mouseClicked(MouseEvent e) {
+//					int row = table.getSelectedRow();
+//					System.out.println(row);
+//					
+//					
+//				}
+//			});
+			
+//		}
+		
+
+	}
+	
+
+}

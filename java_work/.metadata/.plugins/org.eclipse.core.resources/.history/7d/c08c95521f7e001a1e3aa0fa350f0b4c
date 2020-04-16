@@ -1,0 +1,17 @@
+package view;
+
+import javax.swing.JLabel;
+
+public class TitleView extends View {
+
+	public TitleView() {
+		
+	}
+
+	@Override
+	public void display() {
+		add(new JLabel(":::::: 고객 관리 시스템 ::::::"));
+
+	}
+
+}

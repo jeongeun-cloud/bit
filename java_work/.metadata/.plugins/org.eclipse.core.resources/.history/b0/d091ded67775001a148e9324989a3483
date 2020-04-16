@@ -1,6 +1,0 @@
-package view;
-
-public interface View extends R {
-	void display();
-	
-}

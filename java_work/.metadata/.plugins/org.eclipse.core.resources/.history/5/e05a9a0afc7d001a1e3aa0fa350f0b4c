@@ -1,0 +1,42 @@
+package org.comstudy21.evt_handler;
+
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+public class MouseEventHandler implements MouseListener {
+
+	public MouseEventHandler() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package book_practice;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Ex06 {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		HashMap<String, Location> locationMap = new HashMap<>();
+		System.out.println("도시, 경도, 위도를 입력하세요.");
+		
+		while(locationMap.size()<4) {
+			System.out.print(">> ");
+			Location location = new Location();
+			String s = scan.nextLine();
+			String[] sArr = s.split(", ");
+			location.setCity(sArr[0]);
+			location.setLongitude(Integer.parseInt(sArr[1]));
+			location.setLatitude(Integer.parseInt(sArr[1]));
+			
+			
+		}
+	}
+}

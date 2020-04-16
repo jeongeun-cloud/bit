@@ -1,0 +1,11 @@
+package controller;
+
+public class InsertController implements Controller {
+
+	@Override
+	public void service() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package view;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+
+public class MainFrame extends JFrame {
+	
+	public MainFrame() {
+		ListView listView = new ListView();
+		TitleView titleView = new TitleView(); 
+		ButtonView buttonView = new ButtonView();
+		
+		add(BorderLayout.NORTH, titleView);
+		add(listView);
+		add(BorderLayout.SOUTH, buttonView);
+		
+		
+		setSize(750, 550);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new MainFrame();
+	}
+}

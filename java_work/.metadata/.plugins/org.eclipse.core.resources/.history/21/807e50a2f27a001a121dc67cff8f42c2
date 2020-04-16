@@ -1,0 +1,27 @@
+package org.comstudy21.swing;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class DialogExam extends JFrame {
+	
+	public DialogExam() {
+		int result = JOptionPane.showConfirmDialog(this, "작업을 종료하시겠습니까?");
+		System.out.println(result);
+	}
+	
+	public void test() {
+		//JOptionPane.showMessageDialog(this, "가입이 성공적으로 완료되었습니다.");
+		
+		String inputMsg =JOptionPane.showInputDialog("아이디 입력 : ");
+		//System.out.println(inputMsg);
+		
+		JOptionPane.showMessageDialog(this, inputMsg + "님의 가입이 성공적으로 완료되었습니다.");
+	}
+
+	public static void main(String[] args) {
+		new DialogExam();
+		
+	}
+
+}

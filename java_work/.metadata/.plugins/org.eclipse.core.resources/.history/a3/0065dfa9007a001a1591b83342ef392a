@@ -1,0 +1,18 @@
+package org.comstudy21.ch09;
+
+import java.awt.Frame;
+import java.awt.event.WindowListener;
+
+public class Ch09Ex02 extends Frame {
+	
+	public Ch09Ex02() {
+		this.setSize(680,400);
+		this.setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Ch09Ex02();
+
+	}
+
+}

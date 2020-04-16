@@ -1,0 +1,28 @@
+package test.json;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public class Ex01_test01 {
+	
+	public static void main(String[] args) {
+		
+		JSONObject st = new JSONObject();
+		st.put("name", "È«±æµ¿");
+		st.put("mail", "hong@a.com");
+		st.put("phone", "010-1111-1111");
+		
+		JSONArray stArr = new JSONArray();
+		stArr.put(st);
+		
+		st = new JSONObject();
+		st.put("name", "±è±æµ¿");
+		st.put("mail", "kim@a.com");
+		st.put("phone", "010-2222-2222");
+		stArr.put(st);
+		
+		System.out.println(st.toString(2));
+		
+	}
+
+}

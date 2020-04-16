@@ -1,0 +1,28 @@
+package model;
+
+import java.util.Vector;
+
+public class DAO {
+
+	public Vector<Vector> selectAll() {
+		Vector<Vector> vector = new Vector<>();
+		
+		Vector v = new Vector<>();
+		v.add(1);
+		v.add("aaa");
+		v.add("aaa@a.com");
+		v.add("1111");
+		vector.add(v);
+		
+		v = new Vector<>();
+		v.add(2);
+		v.add("bbb");
+		v.add("bbb@b.com");
+		v.add("2222");
+		vector.add(v);
+		
+		return vector;
+	}
+	
+
+}

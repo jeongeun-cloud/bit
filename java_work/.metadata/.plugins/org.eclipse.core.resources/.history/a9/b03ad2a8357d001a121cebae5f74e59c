@@ -1,0 +1,12 @@
+package org.comstudy21.resource;
+
+import javax.swing.table.DefaultTableModel;
+
+import org.comstudy21.view.ListView;
+
+public interface R {
+	
+	DefaultTableModel dm = new DefaultTableModel(10, 4);
+	ListView listView = new ListView(dm);
+	
+}

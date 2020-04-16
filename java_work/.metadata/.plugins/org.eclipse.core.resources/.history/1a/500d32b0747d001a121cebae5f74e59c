@@ -1,0 +1,42 @@
+package org.comstudy21.controller;
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JTable;
+import javax.swing.table.TableModel;
+
+import org.comstudy21.view.ListView;
+
+
+public class DeleteController implements Controller{
+	
+	public DeleteController() {
+		
+	}
+
+	@Override
+	public void service() {
+		
+		JTable table = new JTable((TableModel) listView);
+	
+		if(table.getSelectedRow() == -1) {
+			System.out.println("error");
+		}else {
+			table.addMouseListener(new MouseAdapter() {
+				@Override
+				public void mouseClicked(MouseEvent e) {
+					int row = table.getSelectedRow();
+					System.out.println(row);
+					table.remove(row);
+					
+				}
+			});
+			
+		}
+		
+
+	}
+	
+
+}

@@ -1,0 +1,22 @@
+package org.comstudy21.view;
+
+import java.awt.Label;
+
+public class TitleView extends View {
+
+	public TitleView() {
+		init();
+	}
+
+	@Override
+	public void init() {
+		Label title = new Label("::::: °í°´ °ü¸® ½Ã½ºÅÛ :::::");
+		this.add(title); // JPanel ¿¡ addµÊ 
+	}
+
+	@Override
+	public void start() {
+
+	}
+
+}

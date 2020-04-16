@@ -1,0 +1,36 @@
+package org.comstudy21.swing;
+
+import javax.swing.JFrame;
+import javax.swing.JList;
+import javax.swing.JTextField;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+
+public class ComboBoxExam extends JFrame implements ListSelectionListener {
+	JList list;
+	JTextField tf;
+	
+	public ComboBoxExam() {
+		String[] str = {"등산", "윈드서핑", "독서", "수영", "골프", "영화"};
+		list = new JList(str);
+		
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(420,380);
+		setVisible(true);
+	}
+	
+	
+	@Override
+	public void valueChanged(ListSelectionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+
+
+}

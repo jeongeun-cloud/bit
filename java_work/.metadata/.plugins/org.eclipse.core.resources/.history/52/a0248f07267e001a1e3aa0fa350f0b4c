@@ -1,0 +1,13 @@
+package view;
+
+import javax.swing.JLabel;
+
+public class ButtonView extends View {
+
+	@Override
+	public void display() {
+		add(new JLabel("Button View"));
+
+	}
+
+}

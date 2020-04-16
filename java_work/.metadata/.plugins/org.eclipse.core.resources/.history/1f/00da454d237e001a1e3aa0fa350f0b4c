@@ -1,0 +1,25 @@
+package view;
+
+import java.awt.Color;
+
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class ListView extends View {
+
+	@Override
+	public void display() {
+		DefaultTableModel dm = new DefaultTableModel(0,4);
+		JTable table = new JTable(dm);
+		JScrollPane scrollPane = new JScrollPane(table);
+		
+		add(scrollPane);
+		
+		
+		setBackground(Color.pink);
+
+	}
+
+}
